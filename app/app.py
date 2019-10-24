@@ -18,7 +18,7 @@ def create_app(additional_modules=None):
 
 
 
-    @app.route('/converter/<reference_date>/<float:current_amount>/<src_currency>/<dest_currency>')
+    @app.route('/convert/<reference_date>/<float:current_amount>/<src_currency>/<dest_currency>')
     def converter(reference_date, src_currency, current_amount, dest_currency  ):
 
         amount = CurrencyConverter.convert_amount(reference_date=reference_date, amount=current_amount,
