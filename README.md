@@ -21,10 +21,7 @@ USD, GBP).
 - the amount to convert (e.g. 12.35) in floating point
 
 ## Endpoints
-### HTML / User-facing
-- the address `http://0.0.0.0:5000/converter` will allow a user to convert between two currencies with a simple interface
-
-## API
+### API
 - the endpoint ` GET http://0.0.0.0:5000/converter/<reference_date>/<float:current_amount>/<src_currency>/<dest_currency>` will return a JSON object like this:
 ```
 {
