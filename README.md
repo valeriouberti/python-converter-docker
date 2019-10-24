@@ -22,7 +22,9 @@ USD, GBP).
 
 ## Endpoints
 ### API
-- the endpoint ` GET http://0.0.0.0:5000/converter/<reference_date>/<float:current_amount>/<src_currency>/<dest_currency>` will return a JSON object like this:
+- the endpoint 
+`GET http://0.0.0.0:5000/convert/<reference_date>/<float:current_amount>/<src_currency>/<dest_currency>` 
+will return a JSON object like this:
 ```
 {
 “amount”: 20.23,
