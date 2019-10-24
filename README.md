@@ -33,4 +33,4 @@ will return a JSON object like this:
 ```
 
 Example:
-`$ curl http://0.0.0.0:5000/converter/2019-10-16/12.0/GBP/CHF`
+`$ curl http://0.0.0.0:5000/convert/2019-10-16/12.0/GBP/CHF`
