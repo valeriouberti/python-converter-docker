@@ -31,12 +31,6 @@ def create_app(additional_modules=None):
 
         return resp
 
-    @app.route('/converter/')
-    def convert():
-
-        return render_template("converter.html")
-
-
     return app
 
 if __name__ == '__main__':

@@ -5,10 +5,10 @@ class CurrencyConverter(object):
 
     def convert_amount(reference_date, amount, src_currency, dest_currency):
 
-        # URL = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml"
-        # response = requests.get(URL)
-        # with open('currency.xml', 'wb') as file:
-        #     file.write(response.content)
+        URL = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml"
+        response = requests.get(URL)
+        with open('app/currency.xml', 'wb') as file:
+             file.write(response.content)
         tree = ET.parse('app/currency.xml')
         root = tree.getroot()
         rate = 0
@@ -22,4 +22,4 @@ class CurrencyConverter(object):
 
 
 
-        return amount * float(rate)
+        return round(amount * float(rate), 2)
